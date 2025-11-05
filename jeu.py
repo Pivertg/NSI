@@ -23,10 +23,10 @@ class App:
         if self.etat == "menu":
             self.menu.update()
         elif self.etat == "jeu":
-            pyxel.mouse(True) # activer ou déaciter l'apparation du curseur
+            pyxel.mouse(False) # activer ou déaciter l'apparation du curseur
             self.jeu.update()
         elif self.etat == "menu_pause":
-            pyxel.mouse(True)
+            pyxel.mouse(False)
             self.menu_pause. update()
         # elif self.etat == "parametres":
         #     pyxel.mouse(True)
@@ -34,7 +34,7 @@ class App:
         elif self.etat == "quitter":
             pyxel.quit()
         elif self.etat == "Paramétre_jeu":
-            pyxel.mouse(True)
+            pyxel.mouse(False)
             self.paramétre_jeu.update()
         elif self.etat == "Fin_de_jeu":
             pyxel.mouse(False)
@@ -58,3 +58,4 @@ class App:
             self.fin_de_jeu.afficher()
 if __name__ == "__main__": # on lence le jeux 
     App()
+
